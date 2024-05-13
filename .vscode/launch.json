@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${env:PLAYDATE_SDK_PATH}/bin/Playdate Simulator.app",
+            "args": [
+                "${workspaceFolder}/HelloWorld.pdx"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "make"
+        }
+    ]
+}
