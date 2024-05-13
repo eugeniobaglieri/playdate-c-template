@@ -74,6 +74,23 @@
 		};
 /* End PBXHeadersBuildPhase section */
 
+/* Begin PBXLegacyTarget section */
+		DFBC9CC12BF265090014DE43 /* PlaydateCTemplateDevice */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "device simulator";
+			buildConfigurationList = DFBC9CC22BF265090014DE43 /* Build configuration list for PBXLegacyTarget "PlaydateCTemplateDevice" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = PlaydateCTemplateDevice;
+			passBuildSettingsInEnvironment = 1;
+			productName = PlaydateCTemplateDevice;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		DF6F1FDA2BF25E220017592B /* PlaydateCTemplateSimulator */ = {
 			isa = PBXNativeTarget;
@@ -105,6 +122,9 @@
 					DF6F1FDA2BF25E220017592B = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					DFBC9CC12BF265090014DE43 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = DF6F1FD62BF25E210017592B /* Build configuration list for PBXProject "PlaydateCTemplate" */;
@@ -121,6 +141,7 @@
 			projectRoot = "";
 			targets = (
 				DF6F1FDA2BF25E220017592B /* PlaydateCTemplateSimulator */,
+				DFBC9CC12BF265090014DE43 /* PlaydateCTemplateDevice */,
 			);
 		};
 /* End PBXProject section */
@@ -305,6 +326,37 @@
 			};
 			name = Release;
 		};
+		DFBC9CC32BF265090014DE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFBC9CC42BF265090014DE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +374,15 @@
 			buildConfigurations = (
 				DF6F1FE02BF25E220017592B /* Debug */,
 				DF6F1FE12BF25E220017592B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBC9CC22BF265090014DE43 /* Build configuration list for PBXLegacyTarget "PlaydateCTemplateDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBC9CC32BF265090014DE43 /* Debug */,
+				DFBC9CC42BF265090014DE43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
