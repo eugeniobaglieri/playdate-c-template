@@ -52,3 +52,10 @@ xcuserdata/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,xcode
+
+# exclude build results
+build/*
+Source/*.dylib
+Source/*.elf
+#exclude pdx files
+*.pdx
