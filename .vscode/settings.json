@@ -1,5 +1,8 @@
 // Refernce https://chsxf.dev/2024/03/11/14-playdate-with-vscode.html
 {
+    // Do not put curly braces on new line https://stackoverflow.com/questions/46111834/format-curly-braces-on-same-line-in-c-vscode
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "C_Cpp.formatting": "clangFormat",
     "C_Cpp.default.compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
     "C_Cpp.default.includePath": [
         "${env:PLAYDATE_SDK_PATH}/C_API"
@@ -11,7 +14,6 @@
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
-    "C_Cpp.formatting": "vcFormat",
     "files.associations": {
         "*.h": "c"
     }
